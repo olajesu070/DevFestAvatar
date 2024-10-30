@@ -1,11 +1,34 @@
-﻿.mother {
-  background-image: url(../images/DevFest-General-01-1.gif);
+﻿@keyframes changeBackground {
+  0% {
+    background-image: url(../images/devfest2024.gif); /* First image */
+  }
+  33% {
+    background-image: url(../images/devfest2024.gif); /* Show first image for 1/3 of the total duration */
+  }
+  34% {
+    background-image: url(../images/devfest2024JoinUs.gif); /* Transition to second image */
+  }
+  66% {
+    background-image: url(../images/devfest2024JoinUs.gif); /* Show second image for 1/3 of the total duration */
+  }
+  67% {
+    background-image: url(../images/devfest2024NewFriends.gif); /* Transition to third image */
+  }
+  100% {
+    background-image: url(../images/devfest2024NewFriends.gif); /* Show third image for the final 1/3 */
+  }
+}
+
+.mother {
+  background-image: url(../images/devfest2024.gif); 
   background-repeat: no-repeat;
-  background-size: cover;
-  font-family: Roboto;
-  font-weight: Regular;
-  background-color: #2b83fc;
-  overflow: hidden;
+  /* background-size: cover; */
+  background-position: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  background-color: #f0f0f0;
+  margin: 0px;
+  animation: changeBackground 15s infinite; 
 }
 
 .grid-horizontal-container {

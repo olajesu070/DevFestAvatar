@@ -7,7 +7,8 @@
 var currentColor = "";
 var currentShape = "";
 var rawImg = "";
-var TempImage = "images/empty.png";
+// var TempImage = "images/empty.png";
+var TempImage = "images/avatarEmpty.jpg";
 var ImageLength = 0;
 var general_to_crop;
 var templateMaxSize = 1080;
